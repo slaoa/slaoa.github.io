@@ -1,0 +1,98 @@
+body {
+	background-image: url(../images/ss.jpg);
+	/* the 2 .. in front of the image path is to tell CSS to go up
+	1 level. the / sign separates the from the next order given. so "../images" means 
+	"go up one level and then go into the images folder" */
+	background-repeat: no-repeat;
+	background-size: cover; /*makes the background the background the size 
+	whatever cover we have - good for several computers or phones, where 
+	screen sizes change */
+	font-family: Open Sans, Arial, sans-serif;
+}
+
+.main {
+	background-color: white;
+	background-color: rgba(255,255,255,0.5); /*we have made the background box 
+	of the body almost transparent, by modifying the white to transparent. 
+	we left the first line as "white" for compatibility issues, so that
+	we dont have problems with earlier versions of browsers*/
+	width: 600px;
+	margin:0 auto;
+	padding: 30px; /*padding adds space around my box, along the 4 sides*/
+	border-radius: 30px;
+	box-shadow: 0px 0px 50px 10px rgba(255,255,255,0.2); /*horizontal offset/vertical offset/
+	blur/size for how big it is*/
+
+}
+
+
+h1 {
+	text-align: center;
+}
+
+
+h2{
+	margin-left: 90px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-weight: normal;
+}
+
+/* this below will make the h3 go in a different color when the user
+hovers the mouse over it, to indicate they can click on it */
+
+h3:hover{
+	color:#333999;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* you can get a lot of different cursors, not just a pointer. you need
+to watch out, because they can mean other things inj the language
+and confuse the user. just google js mouse pointer custom
+	<img src:""  class="mousepointer">   you would use this to assign a 
+	picture that can follow your mousepointer*/
+
+img{
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+	border: 5px solid grey;
+	border-radius:50% 0 50% 0;
+	/*it starts with the top left corner and goes clockwise, 
+	saying what to do in every corner*/
+}
+
+
+p,
+ul,
+ol{
+	line-height: 1.5;
+	list-style: circle;
+	/* you can also set it to none, 
+	or to whatever other style you want*/
+	padding-left: 0px;
+	/*when u use 0 in CSS you dont need to specify
+	the units, as 0 is 0 in any unit or quantity*/
+}
+
+.best {
+	padding-left: 40px;
+}
+
+
+a{
+	color: purple;
+	text-decoration: none;
+	font-weight: bold;
+/*text decoration is the underline*/
+}
+
+
+a:hover {
+	text-decoration: underline;
+	transform: rotateZ(320deg);
+	display: inline-block;
+/* this is for when you are looking at the hyperlinks. 
+it will tell you what format to have when you hover
+over those links*/
+}
